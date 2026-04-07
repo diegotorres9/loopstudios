@@ -9,6 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32"
     href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -30,47 +31,166 @@
 </head>
 
 <body>
-  About
-  Careers
-  Events
-  Products
-  Support
+  <section class="hero">
+    <!-- <picture>
+      <source srcset="./images/desktop/image-hero.jpg" media="(width >= 768px)">
+      <img src="./images/mobile/image-hero.jpg"
+        alt="A person wearing an immersive headset while playing an arcade game.">
+    </picture> -->
+    <header>
+      <img src="./images/logo.svg" alt="loopstudios logo.">
+      <svg class="menu-icon" id="menu-icon" width="24" height="16"
+        xmlns="http://www.w3.org/2000/svg">
+        <g fill="#FFF" fill-rule="evenodd">
+          <path d="M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z" />
+        </g>
+      </svg>
+      <nav style="display: none;">
+        <ul>
+          <li>About</li>
+          <li>Careers</li>
+          <li>Events</li>
+          <li>Products</li>
+          <li>Support</li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Immersive experiences that deliver</h1>
+  </section>
+  <main>
+    <section class="intro">
+      <picture>
+        <source srcset="./images/desktop/image-interactive.jpg"
+          media="(width >= 768px)">
+        <img src="./images/mobile/image-interactive.jpg"
+          alt="A model wearing an interactive vr headset.">
+      </picture>
+      <div class="intro-copy">
+        <h2>The leader in interactive VR</h2>
+        <p>
+          Founded in 2011, Loopstudios has been producing world-class virtual
+          reality
+          projects for some of the best companies around the globe. Our
+          award-winning
+          creations have transformed businesses through digital experiences that
+          bind
+          to their brand.
+        </p>
+      </div>
+    </section>
+    <section class="creations-container">
+      <h2>Our creations</h2>
+      <div class="creations-grid">
+        <div class="creation-grid-item">
+          <picture>
+            <source srcset="./images/desktop/image-deep-earth.jpg"
+              media="(width >= 1072px)">
+            <img src="./images/mobile/image-deep-earth.jpg"
+              alt="A picture of Earth from outer space.">
+          </picture>
+          <span>Deep <br>earth</span>
+          <div class="image-overlay"></div>
+        </div>
+        <div class="creation-grid-item">
+          <picture>
+            <source srcset="./images/desktop/image-night-arcade.jpg"
+              media="(width >= 1072px)">
+            <img src="./images/mobile/image-night-arcade.jpg"
+              alt="A picture of Earth from outer space.">
+          </picture>
+          <span>Night<br> arcade</span>
+          <div class="image-overlay"></div>
+        </div>
+        <div class="creation-grid-item">
+          <picture>
+            <source srcset="./images/desktop/image-soccer-team.jpg"
+              media="(width >= 1072px)">
+            <img src="./images/mobile/image-soccer-team.jpg"
+              alt="A picture of Earth from outer space.">
+          </picture>
+          <span>Soccer<br> team VR</span>
+          <div class="image-overlay"></div>
+        </div>
+        <div class="creation-grid-item">
+          <picture>
+            <source srcset="./images/desktop/image-grid.jpg"
+              media="(width >= 1072px)">
+            <img src="./images/mobile/image-grid.jpg"
+              alt="A picture of Earth from outer space.">
+          </picture>
+          <span>The<br> grid</span>
+          <div class="image-overlay"></div>
+        </div>
+        <div class="creation-grid-item">
+          <picture>
+            <source srcset="./images/desktop/image-from-above.jpg"
+              media="(width >= 1072px)">
+            <img src="./images/mobile/image-from-above.jpg"
+              alt="A picture of Earth from outer space.">
+          </picture>
+          <span>From up <br>above VR</span>
+          <div class="image-overlay"></div>
+        </div>
+        <div class="creation-grid-item">
+          <picture>
+            <source srcset="./images/desktop/image-pocket-borealis.jpg"
+              media="(width >= 1072px)">
+            <img src="./images/mobile/image-pocket-borealis.jpg"
+              alt="A picture of Earth from outer space.">
+          </picture>
+          <span>Pocket<br> borealis</span>
+          <div class="image-overlay"></div>
+        </div>
+        <div class="creation-grid-item">
+          <picture>
+            <source srcset="./images/desktop/image-curiosity.jpg"
+              media="(width >= 1072px)">
+            <img src="./images/mobile/image-curiosity.jpg"
+              alt="A picture of Earth from outer space.">
+          </picture>
+          <span>The<br> curiosity</span>
+          <div class="image-overlay"></div>
+        </div>
+        <div class="creation-grid-item">
+          <picture>
+            <source srcset="./images/desktop/image-fisheye.jpg"
+              media="(width >= 1072px)">
+            <img src="./images/mobile/image-fisheye.jpg"
+              alt="A picture of Earth from outer space.">
+          </picture>
+          <span>Make it<br> fisheye</span>
+          <div class="image-overlay"></div>
+        </div>
+      </div>
+      <a class="see-all-link" href="#">See all</a>
+    </section>
+  </main>
+  <footer>
+    <img src="./images/logo.svg" alt="loopstudios logo.">
+    <nav>
+      <ul>
+        <li>About</li>
+        <li>Careers</li>
+        <li>Events</li>
+        <li>Products</li>
+        <li>Support</li>
+      </ul>
+    </nav>
+    <div class="social-links">
+      <img src="./images/icon-facebook.svg" alt="facebook icon.">
+      <img src="./images/icon-twitter.svg" alt="twitter icon.">
+      <img src="./images/icon-pinterest.svg" alt="pinterest icon.">
+      <img src="./images/icon-instagram.svg" alt="instagram icon.">
+    </div>
+    <span>© 2021 Loopstudios. All rights reserved.
+    </span>
+  </footer>
 
-  Immersive experiences that deliver
-
-  The leader in interactive VR
-
-  Founded in 2011, Loopstudios has been producing world-class virtual reality
-  projects for some of the best companies around the globe. Our award-winning
-  creations have transformed businesses through digital experiences that bind
-  to their brand.
-
-  Our creations
-
-  See all
-
-  Deep earth
-  Night arcade
-  Soccer team VR
-  The grid
-  From up above VR
-  Pocket borealis
-  The curiosity
-  Make it fisheye
-
-  About
-  Careers
-  Events
-  Products
-  Support
-
-  © 2021 Loopstudios. All rights reserved.
-
-  <footer class="attribution">
+  <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend
       Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
-  </footer>
+  </div>
 </body>
 
 </html>
