@@ -62,45 +62,17 @@ header>.full-menu
     z-index: 9999;
     padding: 0 clamp(1.563rem, -2.366rem + 8.185vw, 5rem);
     padding-top: clamp(2.5rem, 0.786rem + 3.571vw, 4rem);
-    display: none;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 32px 1fr;
-}
-
-@keyframes slideInMenu
-{
-    from
-    {
-        transform: translateX(-100%);
-    }
-
-    to
-    {
-        transform: translateX(0);
-    }
-}
-
-@keyframes slideCloseMenu
-{
-    from
-    {
-        transform: translateX(0);
-    }
-
-    to
-    {
-        transform: translateX(-100%);
-    }
+    transition: all 0.75s ease-in;
+    transition-behavior: allow-discrete;
+    transform: translateX(-100%);
 }
 
 .is-open
 {
-    animation: slideInMenu 0.75s ease-in;
-}
-
-.is-closed
-{
-    animation: slideCloseMenu 0.75s ease-in;
+    transform: translateX(0) !important;
 }
 
 .mobile-menu>.close-menu
